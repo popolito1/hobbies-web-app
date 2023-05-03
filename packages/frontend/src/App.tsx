@@ -3,14 +3,14 @@ import './App.css';
 import {
   Routes,
   Route,
-  Router,
 } from "react-router-dom";
 import Home from './pages/Home';
 import LanaDelRey from './pages/LanaDelRey';
 import Bugatti from './pages/Bugatti';
 import Recipes from './pages/Recipes';
 import Contact from './pages/Contact';
-import NavBar from './components/NavBar';
+import NavBar from './components/common/NavBar';
+import Favorites from './pages/Favorites';
 
 
 function App() {
@@ -24,6 +24,7 @@ function App() {
       <Route path='/bugatti' element={<Bugatti/>}></Route>
       <Route path='/recipes' element={<Recipes/>}></Route>
       <Route path='/contact' element={<Contact/>}></Route>
+      <Route path='/favorites' element={<Favorites/>}></Route>
       </Routes>
     </div>
   );

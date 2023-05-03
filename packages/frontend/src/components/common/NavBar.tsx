@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './NavBar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTimes, faBars } from '@fortawesome/free-solid-svg-icons';
+import { faTimes, faBars, faHeart, faH } from '@fortawesome/free-solid-svg-icons';
 
 const NavBar = () => {
    const [click, setClick] = React.useState(false);
@@ -36,6 +36,11 @@ const NavBar = () => {
                   </li>
                   <li className="nav-item">
                      <NavLink to="/contact"  className="nav-links">Contact</NavLink>
+                  </li>
+                  <li className="nav-item">
+                     <NavLink to="/favorites"  className="nav-links">
+                     <FontAwesomeIcon icon={faHeart}></FontAwesomeIcon>
+                     </NavLink>
                   </li>
                </ul>
                <div className="nav-icon" onClick={handleClick}>
